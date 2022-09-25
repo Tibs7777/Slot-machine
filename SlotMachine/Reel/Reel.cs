@@ -10,6 +10,11 @@
             get { return _symbols; }
             set { _symbols = value; pWeightSum = value.Sum(s => s.Weight); }
         }
+        
+        public int PWeightSum
+        {
+            get { return pWeightSum; }
+        }
 
         public int Length { get; set; }
 
@@ -21,7 +26,7 @@
 
             for (int i = 0; i < Length; i++)
             {
-                int randomNumber = random.Next(1, pWeightSum + 1);
+                int randomNumber = random.Next(1, PWeightSum + 1);
                 int rangeChecked = 0;
 
                 for (int j = 0; j < Symbols.Count; j++)
