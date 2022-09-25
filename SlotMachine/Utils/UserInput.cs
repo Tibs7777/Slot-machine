@@ -7,7 +7,7 @@
             Console.WriteLine(message);
             string input = Console.ReadLine();
 
-            bool validInput = decimal.TryParse(input, out var result) && result > 0 && decimal.Round(result, 2) == result ;
+            bool validInput = decimal.TryParse(input, out var result) && result > 0 && decimal.Round(result, 2) == result;
 
             if (validInput && additionalInputValidation != null)
             {
