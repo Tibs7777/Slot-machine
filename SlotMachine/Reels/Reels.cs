@@ -27,7 +27,7 @@
         {
             char? firstNonWildCardSymbol = null;
 
-            decimal reelCoefficient = 0;
+            decimal reelCoefficient = 0; 
 
             foreach (var symbol in reel)
             {

@@ -2,9 +2,7 @@
 {
     public class UserInput
     {
-        public delegate bool AdditionalInputValidation(decimal input);
-        
-        public static decimal GetUserMoney(string message, string retryMessage = null, AdditionalInputValidation additionalInputValidation = null)
+        public static decimal GetUserMoney(string message, string retryMessage = null, Func<decimal, bool> additionalInputValidation = null)
         {
             Console.WriteLine(message);
             string input = Console.ReadLine();
