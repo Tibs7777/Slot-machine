@@ -12,15 +12,10 @@
                 new ReelSymbol() {Symbol = '*', Coefficient = 0M, Weight = 5, IsWilcard = true},
             };
 
-            var reel = new Reel()
-            {
-                Symbols = slotMachineSymbols,
-                Length = 3
-            };
-
             var reels = new Reels()
             {
-                Reel = reel,
+                Symbols = slotMachineSymbols,
+                ReelLength = 3,
                 ReelCount = 4
             };
 

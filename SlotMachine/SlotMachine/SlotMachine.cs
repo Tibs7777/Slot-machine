@@ -61,7 +61,7 @@
             return input <= Balance;
         }
 
-        public virtual void PrintResult(List<List<IReelSymbol>> result)
+        public virtual void PrintResult(IEnumerable<IEnumerable<IReelSymbol>> result)
         {
             foreach (var reel in result)
             {
